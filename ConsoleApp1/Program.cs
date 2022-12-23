@@ -12,9 +12,11 @@
                 if(i%3==0)
                 {
                     Console.WriteLine(i);
+
                 }
                 i++;
             }
+            Console.WriteLine("END");
         }
     }
 }
