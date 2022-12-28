@@ -38,68 +38,67 @@
             Console.WriteLine(sum);
 
 
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            //Daxil edilən ədədin rəqəmləri və onların sıra nömrələrinə olan hasilinin cəmini hesablayan proqram yazın
+        //Daxil edilən ədədin rəqəmləri və onların sıra nömrələrinə olan hasilinin cəmini hesablayan proqram yazın
 
-            //Console.Write("Ededi qeyd edin: ");
-            //int number = Convert.ToInt32(Console.ReadLine());  //2345  row 5 ,  row 4 ,  row 3,  row 2
-            ////Example1:
+        //Console.Write("Ededi qeyd edin: ");
+        //int number = Convert.ToInt32(Console.ReadLine());  //2345  row 5 ,  row 4 ,  row 3,  row 2
+        ////Example1:
 
-            //int lenght = number.ToString().Length;
-            //int sum=0;
+        //int lenght = number.ToString().Length;
+        //int sum=0;
 
-            //for (int i = lenght-1; i >= 0; i--)
-            //{
-            //    sum = sum + (i + 1) * (number % 10);
-            //    number /= 10;
-            //}
-            //Console.WriteLine(sum);
+        //for (int i = lenght-1; i >= 0; i--)
+        //{
+        //    sum = sum + (i + 1) * (number % 10);
+        //    number /= 10;
+        //}
+        //Console.WriteLine(sum);
 
-            /////Example2:
+        /////Example2:
 
-            //int lenght = 0;
-            //int dublicate = number;
-            //while (dublicate>0)
-            //{
-            //    lenght++;
-            //    dublicate /= 10;
-            //}
-            //int sum = 0;
-            //for (int i = lenght-1; i >=0; i--)
-            //{
-            //    sum = sum + (i + 1) * (number % 10);
-            //    number /= 10;
-            //}
-            //Console.WriteLine(sum);
+        //int lenght = 0;
+        //int dublicate = number;
+        //while (dublicate>0)
+        //{
+        //    lenght++;
+        //    dublicate /= 10;
+        //}
+        //int sum = 0;
+        //for (int i = lenght-1; i >=0; i--)
+        //{
+        //    sum = sum + (i + 1) * (number % 10);
+        //    number /= 10;
+        //}
+        //Console.WriteLine(sum);
 
-            //while (0<number)
-            //{
-            //    row = number % 10;
-            //    number /= 10;
-            //    Console.WriteLine(row);
-            //}
+        //while (0<number)
+        //{
+        //    row = number % 10;
+        //    number /= 10;
+        //    Console.WriteLine(row);
+        //}
 
 
-            //Console.WriteLine(row);
+        //Console.WriteLine(row);
 
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            //5 reqemli eded verilib. Bu ededin evveline 4 reqemini , axirinada 2 reqemini artir.
-            //Reqemli:
-            //Console.Write("5 reqemli ededi qeyd edin: ");
-            //int number = Convert.ToInt32(Console.ReadLine());
-            //if (number.ToString().Length != 5)
-            //{
-            //    Console.WriteLine("Reqem 5 reqemli olmalidir!! ");
-            //    goto Reqemli;
-            //}
-            //Console.Write("4" + number + "2\n");//1ci usul
+        //5 reqemli eded verilib. Bu ededin evveline 4 reqemini , axirinada 2 reqemini artir.
 
-            ////int first = 4;
-            ////int last = 2;
+        //Reqemli:
+            Console.Write("5 reqemli ededi qeyd edin: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            if (number.ToString().Length != 5)
+            {
+                Console.WriteLine("Reqem 5 reqemli olmalidir!! ");
+                goto Reqemli;
+            }
+            sum = (400000 + number) * 10 + 2;
 
-            ////Console.Write($"{first}{number}{last}");//2ci usul
+            Console.Write(sum);
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -135,6 +134,7 @@
             //{
             //    Console.WriteLine("Muxtelifreqemlidir!");
             //}
+
 
 
         }
