@@ -4,104 +4,93 @@
     {
         static void Main(string[] args)
         {
+            #region Task1
             //Cüt yerdə duran rəqəmlər
             //Verilmiş ədədin cüt yerdə duran rəqəmlərinin kvadratını hesablayan proqramı yazın.
-            Reqem:
-            Console.Write(" 6 reqemli ededi qeyd edin: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            if (number.ToString().Length != 6)
+
+            int number = int.Parse(Console.ReadLine());
+            int count = (int)Math.Log10(number) + 1;
+            int r, i = 0;
+
+            i = count % 2 == 0 ? 0 : 1;
+
+            while (number != 0)
             {
-                Console.WriteLine("Reqem 6 reqemli olmalidir!! ");
-                goto Reqem;
+                r = number % 10;
+                number /= 10;
+
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(r);
+                }
+
+                i++;
             }
-
-            int last;
-            int last1;
-            int last2;
-            double sum;
-
-
-
-            ////soldan saga
-            last2 = number / 10000;
-            last2 = last2 % 10;
-
-            last1 = number / 100;
-            last1 = last1 % 10;
-
-            last = number % 10;
-
-            //alternativ
-            //sum = last * last + last1 * last1 + last2 + last2;
-            sum = Math.Pow(last, 2) + Math.Pow(last1, 2) + Math.Pow(last2, 2);
-
-            Console.WriteLine(sum);
-
-
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        //Daxil edilən ədədin rəqəmləri və onların sıra nömrələrinə olan hasilinin cəmini hesablayan proqram yazın
-
-        //Console.Write("Ededi qeyd edin: ");
-        //int number = Convert.ToInt32(Console.ReadLine());  //2345  row 5 ,  row 4 ,  row 3,  row 2
-        ////Example1:
-
-        //int lenght = number.ToString().Length;
-        //int sum=0;
-
-        //for (int i = lenght-1; i >= 0; i--)
-        //{
-        //    sum = sum + (i + 1) * (number % 10);
-        //    number /= 10;
-        //}
-        //Console.WriteLine(sum);
-
-        /////Example2:
-
-        //int lenght = 0;
-        //int dublicate = number;
-        //while (dublicate>0)
-        //{
-        //    lenght++;
-        //    dublicate /= 10;
-        //}
-        //int sum = 0;
-        //for (int i = lenght-1; i >=0; i--)
-        //{
-        //    sum = sum + (i + 1) * (number % 10);
-        //    number /= 10;
-        //}
-        //Console.WriteLine(sum);
-
-        //while (0<number)
-        //{
-        //    row = number % 10;
-        //    number /= 10;
-        //    Console.WriteLine(row);
-        //}
-
-
-        //Console.WriteLine(row);
-
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        //5 reqemli eded verilib. Bu ededin evveline 4 reqemini , axirinada 2 reqemini artir.
-
-        //Reqemli:
-            Console.Write("5 reqemli ededi qeyd edin: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            int sum = 0;
-            if (number.ToString().Length != 5)
-            {
-                Console.WriteLine("Reqem 5 reqemli olmalidir!! ");
-                goto Reqemli;
-            }
-            sum = (400000 + number) * 10 + 2;
-
-            Console.Write(sum);
-
+            #endregion
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            #region Task2
+            //Daxil edilən ədədin rəqəmləri və onların sıra nömrələrinə olan hasilinin cəmini hesablayan proqram yazın
 
+            //Console.Write("Ededi qeyd edin: ");
+            //int number = Convert.ToInt32(Console.ReadLine());  //2345  row 5 ,  row 4 ,  row 3,  row 2
+            ////Example1:
+
+            //int lenght = number.ToString().Length;
+            //int sum=0;
+
+            //for (int i = lenght-1; i >= 0; i--)
+            //{
+            //    sum = sum + (i + 1) * (number % 10);
+            //    number /= 10;
+            //}
+            //Console.WriteLine(sum);
+
+            /////Example2:
+
+            //int lenght = 0;
+            //int dublicate = number;
+            //while (dublicate>0)
+            //{
+            //    lenght++;
+            //    dublicate /= 10;
+            //}
+            //int sum = 0;
+            //for (int i = lenght-1; i >=0; i--)
+            //{
+            //    sum = sum + (i + 1) * (number % 10);
+            //    number /= 10;
+            //}
+            //Console.WriteLine(sum);
+
+            //while (0<number)
+            //{
+            //    row = number % 10;
+            //    number /= 10;
+            //    Console.WriteLine(row);
+            //}
+
+
+            //Console.WriteLine(row);
+            #endregion
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            #region Task3
+            //5 reqemli eded verilib. Bu ededin evveline 4 reqemini , axirinada 2 reqemini artir.
+
+            ////Reqemli:
+            //    Console.Write("5 reqemli ededi qeyd edin: ");
+            //    int number = Convert.ToInt32(Console.ReadLine());
+            //    int sum = 0;
+            //    if (number.ToString().Length != 5)
+            //    {
+            //        Console.WriteLine("Reqem 5 reqemli olmalidir!! ");
+            //        goto Reqemli;
+            //    }
+            //    sum = (400000 + number) * 10 + 2;
+
+            //    Console.Write(sum);
+            #endregion
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            #region Task4
             //Verilmiş n ədədin rəqəmlərinin müxtəlif olduğunu yoxlayan proqram yazın
 
 
@@ -134,9 +123,27 @@
             //{
             //    Console.WriteLine("Muxtelifreqemlidir!");
             //}
+            #endregion
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            #region Task5
 
+            Console.Write("1-ci ededi daxil edin: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("2-ci ededi daxil edin: ");
+            int b = int.Parse(Console.ReadLine());
+            int count = 0;
 
+            for (int i = a; i <= b; i++)
+            {
+                if (Math.Sqrt(i) == (int)Math.Sqrt(i))
+                {
+                    Console.WriteLine(i);
+                    count++;
+                }
+            }
 
+            Console.WriteLine("Koku olanlarin sayi: " + count);
+            #endregion
         }
     }
 }
