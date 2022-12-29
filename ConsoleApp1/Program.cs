@@ -5,27 +5,27 @@
         static void Main(string[] args)
         {
             #region Task1
-            //Cüt yerdə duran rəqəmlər
-            //Verilmiş ədədin cüt yerdə duran rəqəmlərinin kvadratını hesablayan proqramı yazın.
+            ////Cüt yerdə duran rəqəmlər
+            ////Verilmiş ədədin cüt yerdə duran rəqəmlərinin kvadratını hesablayan proqramı yazın.
 
-            int number = int.Parse(Console.ReadLine());
-            int count = (int)Math.Log10(number) + 1;
-            int r, i = 0;
+            //int number = int.Parse(Console.ReadLine());
+            //int count = (int)Math.Log10(number) + 1;
+            //int r, i = 0;
 
-            i = count % 2 == 0 ? 0 : 1;
+            //i = count % 2 == 0 ? 0 : 1;
 
-            while (number != 0)
-            {
-                r = number % 10;
-                number /= 10;
+            //while (number != 0)
+            //{
+            //    r = number % 10;
+            //    number /= 10;
 
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(r);
-                }
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine(r);
+            //    }
 
-                i++;
-            }
+            //    i++;
+            //}
             #endregion
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             #region Task2
@@ -127,22 +127,46 @@
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             #region Task5
 
-            Console.Write("1-ci ededi daxil edin: ");
-            int a = int.Parse(Console.ReadLine());
-            Console.Write("2-ci ededi daxil edin: ");
-            int b = int.Parse(Console.ReadLine());
-            int count = 0;
+            //Console.Write("1-ci ededi daxil edin: ");
+            //int a = int.Parse(Console.ReadLine());
+            //Console.Write("2-ci ededi daxil edin: ");
+            //int b = int.Parse(Console.ReadLine());
+            //int count = 0;
 
-            for (int i = a; i <= b; i++)
-            {
-                if (Math.Sqrt(i) == (int)Math.Sqrt(i))
-                {
-                    Console.WriteLine(i);
-                    count++;
-                }
-            }
+            //for (int i = a; i <= b; i++)
+            //{
+            //    if (Math.Sqrt(i) == (int)Math.Sqrt(i))
+            //    {
+            //        Console.WriteLine(i);
+            //        count++;
+            //    }
+            //}
 
-            Console.WriteLine("Koku olanlarin sayi: " + count);
+            //Console.WriteLine("Koku olanlarin sayi: " + count);
+            #endregion
+            #region Task 8
+            ////nnn.ddd formatında verilmiş həqiqi ədədi  kəsr və tam hissısi ilə yerini dəyişən(ddd.nnn) proqramı yazın
+            //Console.Write("Reqemi yazin: ");
+            //decimal number = decimal.Parse(Console.ReadLine());
+            //decimal a = (decimal)(int)number;
+            //decimal b = number % 1.0m;
+
+            //while (a / 10 > 1)
+            //{
+            //    a = a / 10;
+            //}
+            //a = a / 10;
+
+            //while (b % 1 != 0)
+            //{
+            //    b = b * 10;
+            //}
+
+            //decimal result = b + a;
+            //Console.WriteLine("b: " + b);
+            //Console.WriteLine("a: " + a);
+
+            //Console.WriteLine("Cavab: " + result);
             #endregion
         }
     }
