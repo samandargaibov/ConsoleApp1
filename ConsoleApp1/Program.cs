@@ -144,6 +144,20 @@
 
             //Console.WriteLine("Koku olanlarin sayi: " + count);
             #endregion
+            ////İnsanın yaşı n(1≤ n ≤ 1188) aylarla verilmişdir.Yaşı aşağıdakı formada göstərən proqramı yazın.
+            
+            //Console.Write("Yashi daxil edin: ");
+            //int age = int.Parse(Console.ReadLine());
+
+            //int year = 12;
+            //int month;
+            //month = age;
+
+            //age = age / year;
+            //year = month % year;
+
+            //Console.WriteLine(age + " il " + year + " ay");
+            
             #region Task 8
             ////nnn.ddd formatında verilmiş həqiqi ədədi  kəsr və tam hissısi ilə yerini dəyişən(ddd.nnn) proqramı yazın
             //Console.Write("Reqemi yazin: ");
