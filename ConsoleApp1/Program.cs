@@ -27,7 +27,7 @@
             //    i++;
             //}
             #endregion
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             #region Task2
             //Daxil edilən ədədin rəqəmləri və onların sıra nömrələrinə olan hasilinin cəmini hesablayan proqram yazın
 
@@ -72,7 +72,7 @@
 
             //Console.WriteLine(row);
             #endregion
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             #region Task3
             //5 reqemli eded verilib. Bu ededin evveline 4 reqemini , axirinada 2 reqemini artir.
 
@@ -89,7 +89,7 @@
 
             //    Console.Write(sum);
             #endregion
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             #region Task4
             //Verilmiş n ədədin rəqəmlərinin müxtəlif olduğunu yoxlayan proqram yazın
 
@@ -124,7 +124,7 @@
             //    Console.WriteLine("Muxtelifreqemlidir!");
             //}
             #endregion
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             #region Task5
 
             //Console.Write("1-ci ededi daxil edin: ");
@@ -161,7 +161,25 @@
             //Console.WriteLine(age + " il " + year + " ay");
             #endregion
 
-            #region Task 8
+            #region Task7
+            //Verilmiş natural N(N> 9) ədəddə olan sıfırların sayını müəyyənləşdirən proqramı yazın.
+
+            //Console.Write("Reqemi daxil edin: ");
+            //long number = Convert.ToInt64(Console.ReadLine());
+            //int count = 0;
+
+            //while (number / 10 > 1)
+            //{
+            //    if (number % 10 == 0)
+            //    {
+            //        count++;
+            //    }
+            //    number /= 10;
+            //}
+            //Console.Write("Sum: " + count);
+            #endregion
+
+            #region Task8
             ////nnn.ddd formatında verilmiş həqiqi ədədi  kəsr və tam hissısi ilə yerini dəyişən(ddd.nnn) proqramı yazın
             //Console.Write("Reqemi yazin: ");
             //decimal number = decimal.Parse(Console.ReadLine());
